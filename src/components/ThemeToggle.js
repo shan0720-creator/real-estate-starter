@@ -1,14 +1,14 @@
 // ThemeToggle.js
 
 import React from 'react';
-import { useTheme } from '../ThemeContext'; // Import the useTheme hook
+import { useTheme } from '../ThemeContext';
 
 const ThemeToggle = () => {
   const { isNightMode, toggleTheme } = useTheme();
 
   return (
-    <button onClick={toggleTheme}>
-      Toggle {isNightMode ? 'Light' : 'Dark'} Mode
+    <button className="bg-violet-700 hover:bg-violet-800 text-white px-4 py-3 rounded-lg transition" onClick={toggleTheme}>
+      {isNightMode ? 'Light' : 'Dark'} Mode
     </button>
   );
 };

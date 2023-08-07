@@ -1,23 +1,26 @@
+/* Header.css */
+
 .light-header {
     background-color: #f0f0f0;
-    color: #151515;
+    color: #181717;
   }
   
   .dark-header {
-    background-color: #151515;
+    background-color: #181717;
     color: #f0f0f0;
   }
-
-.theme-toggle-button {
-  background-color: #3498db;
-  color: #ffffff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.theme-toggle-button:hover {
-  background-color: #2980b9;
-}
+  
+  .theme-toggle-button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .theme-toggle-button:hover {
+    background-color: #2980b9;
+  }
+  
