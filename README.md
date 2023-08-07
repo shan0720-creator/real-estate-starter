@@ -1,4 +1,4 @@
-# real-estate-starter
+# Real-Estate-Starter
 This project is a real estate listing website built with React. It provides a platform for users to browse through various property listings and view detailed information about each property.
 
 ## Project Structure
