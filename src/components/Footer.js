@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="bg-blue-900 text-white p-4 text-center">
+      &copy; {new Date().getFullYear()} The Stovall Group. All rights reserved.
+    </footer>
+  );
 };
 
 export default Footer;
