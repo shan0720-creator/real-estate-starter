@@ -8,7 +8,7 @@ import { useTheme } from '../ThemeContext'; // Import the useTheme hook
 import './Header.css'; // Import the CSS file
 
 const Header = () => {
-  const { isNightMode } = useTheme(); // Use the isNightMode value from the theme context
+  const { isNightMode, toggleTheme } = useTheme(); // Use the isNightMode and toggleTheme values from the theme context
 
   const bodyStyles = {
     backgroundColor: isNightMode ? '#141414' : '#ffffff', // Adjust colors as needed
@@ -29,7 +29,9 @@ const Header = () => {
             <Link>Sell</Link>
             <Dropdown>Manage property</Dropdown>
             <Dropdown2>Manage property</Dropdown2>
-            <ThemeToggle />
+            <button className="bg-violet-700 hover:bg-violet-800 text-white px-4 py-3 rounded-lg transition" onClick={toggleTheme}>
+              {isNightMode ? 'Light' : 'Dark'} Mode
+            </button>
           </div>
           <div className='flex items-center gap-6'>
             <Link className='hover:text-violet-900 transition' to=''>Log in</Link>
